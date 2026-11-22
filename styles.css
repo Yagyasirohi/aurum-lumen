@@ -1707,3 +1707,11 @@ h1, h2, h3, h4, h5, h6 {
  .review-photo-gallery { grid-template-columns:1fr;max-width:440px;margin:auto; }
  .review-photo-gallery .product-photo { height:auto;max-height:380px;object-fit:contain; }
 }
+
+/* Real Tavza Review Card product photo gallery */
+.review-photo-gallery { width:100%;display:grid;grid-template-columns:1fr 1fr;gap:1rem;align-items:center;position:relative;z-index:2; }
+.review-photo-gallery .product-photo { width:100%;height:390px;object-fit:cover;background:#f5f2f8;border:1px solid rgba(196,181,253,.22); }
+.review-photo-gallery .product-photo:first-child { object-position:center; }
+.review-photo-gallery .product-photo:last-child { object-position:center; }
+.review-card-frame:has(.review-photo-gallery) .review-card-mockup { display:none; }
+@media(max-width:600px) { .review-photo-gallery { grid-template-columns:1fr 1fr;gap:.55rem; } .review-photo-gallery .product-photo { height:280px; } }
