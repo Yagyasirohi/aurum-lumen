@@ -1715,3 +1715,50 @@ h1, h2, h3, h4, h5, h6 {
 .review-photo-gallery .product-photo:last-child { object-position:center; }
 .review-card-frame:has(.review-photo-gallery) .review-card-mockup { display:none; }
 @media(max-width:600px) { .review-photo-gallery { grid-template-columns:1fr 1fr;gap:.55rem; } .review-photo-gallery .product-photo { height:280px; } }
+
+
+/* Full product photos: preserve the complete image without cropping */
+.business-card-frame,
+.review-card-frame {
+    min-height: 0;
+    height: auto;
+    padding: clamp(1rem, 3vw, 2.5rem);
+}
+.business-product-photo,
+.review-photo-gallery .product-photo {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    max-height: 620px;
+    margin: 0 auto;
+    object-fit: contain;
+    object-position: center;
+    background: transparent;
+}
+.review-photo-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 1fr;
+}
+.review-photo-gallery figure {
+    width: 100%;
+    align-items: center;
+}
+.review-photo-gallery figcaption {
+    margin-top: .25rem;
+}
+@media (max-width: 600px) {
+    .business-card-frame,
+    .review-card-frame {
+        min-height: 0;
+    }
+    .business-product-photo,
+    .review-photo-gallery .product-photo {
+        height: auto;
+        max-height: 520px;
+        object-fit: contain;
+    }
+}
