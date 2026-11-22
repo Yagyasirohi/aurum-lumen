@@ -1,30 +1,30 @@
 /* ==========================================================================
-   AURUM & LUMEN — Premium Product Showcase Stylesheet
+   TAVZA — Premium Product Showcase Stylesheet
    ========================================================================== */
 
 /* --- CSS Custom Properties (Design Tokens) --- */
 :root {
     /* Color Palette — Purple / Black / White Theme */
-    --color-bg: #050308;
-    --color-bg-elevated: #0d0814;
-    --color-surface: #140e1e;
-    --color-surface-hover: #1d152e;
-    --color-border: #2d1b3d;
-    --color-border-light: #3d2a4d;
+    --color-bg: #090711;
+    --color-bg-elevated: #100d1c;
+    --color-surface: #171226;
+    --color-surface-hover: #211a35;
+    --color-border: #33264a;
+    --color-border-light: #4a385f;
 
     --color-text-primary: #fafafa;
     --color-text-secondary: #c8b8d8;
     --color-text-muted: #8a7a9a;
     --color-text-inverse: #050308;
 
-    --color-purple: #a855f7;
-    --color-purple-light: #c084fc;
-    --color-purple-dark: #7e22ce;
-    --color-purple-glow: rgba(168, 85, 247, 0.4);
-    --color-purple-glow-strong: rgba(168, 85, 247, 0.6);
+    --color-purple: #a78bfa;
+    --color-purple-light: #c4b5fd;
+    --color-purple-dark: #7c3aed;
+    --color-purple-glow: rgba(167, 139, 250, 0.32);
+    --color-purple-glow-strong: rgba(167, 139, 250, 0.5);
 
     --color-violet: #8b5cf6;
-    --color-violet-light: #a78bfa;
+    --color-violet-light: #c4b5fd;
     --color-violet-dark: #6d28d9;
     --color-violet-glow: rgba(139, 92, 246, 0.3);
     --color-violet-glow-strong: rgba(139, 92, 246, 0.5);
@@ -1607,3 +1607,84 @@ h1, h2, h3, h4, h5, h6 {
 }
 ::-webkit-scrollbar-thumb:hover { background: var(--color-border-light); }
 ::-webkit-scrollbar-corner { background: var(--color-bg); }
+
+/* ==========================================================================
+   TAVZA — NFC products and loyalty experience
+   ========================================================================== */
+.nav-hidden { transform: translateY(-110%); }
+.nav { transition: transform var(--transition-base), background var(--transition-base), border-color var(--transition-base); }
+.hero { min-height: 92vh; }
+.hero-title { letter-spacing: -0.055em; }
+.title-purple { background: linear-gradient(110deg,#c4b5fd 5%,#a78bfa 50%,#8b5cf6 100%); -webkit-background-clip:text; background-clip:text; }
+.hero-subtitle { max-width: 680px; margin-left:auto; margin-right:auto; line-height:1.7; }
+.indicator-icon { animation:none; }
+.product { padding-top: clamp(5rem,9vw,8rem); padding-bottom: clamp(5rem,9vw,8rem); }
+.product-container { align-items:center; }
+.media-frame { min-height: 430px; display:flex; align-items:center; justify-content:center; padding: clamp(1.5rem,4vw,3.5rem); }
+.business-card-frame { background: radial-gradient(circle at 50% 42%,#30234c 0%,#171126 48%,#0e0b17 100%); }
+.violet-card-frame { background: radial-gradient(circle at 50% 42%,#30234c 0%,#171126 48%,#0e0b17 100%); }
+.business-card-mockup { width:min(82%,430px); aspect-ratio:1.62; border-radius:20px; padding:clamp(1.3rem,3vw,2rem); position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:space-between; background:linear-gradient(135deg,#29203e,#11101b 68%,#211936); border:1px solid rgba(221,208,255,.34); box-shadow:0 30px 80px rgba(0,0,0,.55),inset 0 1px rgba(255,255,255,.15); transform:rotate(-7deg); }
+.business-card-mockup:before { content:""; position:absolute; width:240px;height:240px;right:-90px;top:-110px;border:1px solid rgba(196,181,253,.28);border-radius:50%;box-shadow:0 0 0 22px rgba(196,181,253,.035),0 0 0 46px rgba(196,181,253,.025); }
+.mockup-top,.mockup-bottom { display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1; }
+.mockup-chip { display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:#c4b5fd;color:#171126;font-weight:700;font-size:18px; }
+.mockup-nfc { color:#c4b5fd;letter-spacing:-5px;font-size:24px;transform:rotate(90deg); }
+.mockup-brand { font:700 clamp(2rem,5vw,3.4rem) var(--font-display);letter-spacing:-.07em;position:relative;z-index:1; }
+.mockup-brand span { color:#c4b5fd; }
+.mockup-name { font:600 .78rem var(--font-body);letter-spacing:.18em;color:#fff;position:relative;z-index:1; }
+.mockup-role { font-size:.7rem;color:#b8accd;position:relative;z-index:1;margin-top:-.7rem; }
+.mockup-bottom { border-top:1px solid rgba(255,255,255,.16);padding-top:.8rem;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#d9d0e8; }
+.mockup-arrow { color:#c4b5fd;font-size:1.2rem; }
+.review-card-frame { background:radial-gradient(circle at 50% 40%,#30234c 0%,#171126 50%,#0e0b17 100%); }
+.review-card-mockup { width:min(75%,360px); min-height:380px; border-radius:18px; padding:1.7rem 1.5rem 1.25rem; background:linear-gradient(155deg,#f7f4ff,#e5ddf4); color:#211735; box-shadow:0 30px 70px rgba(0,0,0,.5); display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:space-between; transform:rotate(3deg); }
+.review-brand { display:flex;align-items:center;gap:.5rem;font:700 1.15rem var(--font-display); }
+.review-star { color:#7c3aed;font-size:1.4rem; }
+.review-kicker { font-size:.56rem;letter-spacing:.2em;font-weight:700;color:#75658e; }
+.review-heading { font:600 1.85rem/1.12 var(--font-display);letter-spacing:-.06em; }
+.review-heading em { color:#7041bd;font-style:normal; }
+.review-actions { display:flex;align-items:center;justify-content:space-around;width:100%;gap:.4rem;padding:.9rem .4rem;border:1px solid #d3c7e5;border-radius:12px;background:rgba(255,255,255,.65); }
+.review-actions>div:not(.review-or) { display:flex;flex-direction:column;align-items:center;gap:.35rem; }
+.review-actions b { font-size:.48rem;letter-spacing:.09em;color:#55466b; }
+.nfc-symbol { font-size:1.6rem;color:#7544bf;transform:rotate(90deg); }
+.qr-symbol { font-size:1.8rem;color:#7544bf; }
+.review-or { color:#9889a9;font-size:.55rem; }
+.review-footer { font-size:.6rem;color:#89799d;letter-spacing:.1em; }
+.media-specs { position:static; margin-top:1rem; transform:none!important; }
+.media-frame:hover .media-specs { transform:none; }
+.specs-list li { gap:1rem; }
+.product-info { padding-top:0; }
+.product-name { font-size:clamp(2.3rem,4vw,3.5rem); }
+.product-tagline { font-size:1.25rem; }
+.product-description p { line-height:1.8; }
+.section-note { margin:2rem auto 0;max-width:680px;color:var(--color-text-muted);font-size:.8rem;line-height:1.7; }
+.benefit-icon { font-size:3rem;color:var(--color-purple);font-family:var(--font-display); }
+.craft-visual { border-radius:50%;background:rgba(167,139,250,.08);border:1px solid var(--color-border); }
+.contact-lead { line-height:1.8; }
+.form-disclaimer { text-align:center;color:var(--color-text-muted);font-size:.75rem;margin-top:1rem; }
+.form-submit:disabled { opacity:.7;cursor:wait; }
+.footer-tagline { max-width:330px; }
+.footer-nav { grid-template-columns:repeat(3,1fr); }
+.footer-column { display:flex;flex-direction:column;align-items:flex-start; }
+.footer-link { padding:.35rem 0; }
+@media (max-width:1024px) {
+ .product-container { grid-template-columns:1fr;max-width:760px; }
+ .product-info { text-align:left; }
+ .product-highlights { align-items:flex-start; }
+ .media-frame { min-height:380px; }
+}
+@media (max-width:768px) {
+ .hero { min-height:88vh;padding-top:8rem; }
+ .hero-indicators { flex-direction:row;flex-wrap:wrap; }
+ .indicator { width:auto;max-width:none; }
+ .media-frame { min-height:340px; }
+ .review-card-mockup { min-height:330px; }
+}
+@media (max-width:480px) {
+ .hero-title { font-size:clamp(2.45rem,12vw,3.1rem); }
+ .hero-indicators { flex-direction:column; }
+ .indicator { width:100%;max-width:280px; }
+ .media-frame { min-height:300px;padding:1rem; }
+ .business-card-mockup { width:95%; }
+ .review-card-mockup { width:88%;min-height:300px; }
+ .product-highlights { padding:1.2rem; }
+ .footer-nav { display:grid;grid-template-columns:1fr 1fr; }
+}
