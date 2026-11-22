@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium aesthetic showcase for two exceptional products">
+    <title>Aurum & Lumen — Premium Product Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" aria-label="Aurum & Lumen Home">
+                <span class="logo-mark" aria-hidden="true"></span>
+                <span class="logo-text">AURUM & LUMEN</span>
+            </a>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#aurum" class="nav-link" role="menuitem">Aurum</a></li>
+                <li role="none"><a href="#lumen" class="nav-link" role="menuitem">Lumen</a></li>
+                <li role="none"><a href="#philosophy" class="nav-link" role="menuitem">Philosophy</a></li>
+                <li role="none"><a href="#contact" class="nav-link nav-cta" role="menuitem">Experience</a></li>
+            </ul>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" role="banner">
+        <div class="hero-background" aria-hidden="true">
+            <div class="hero-orb orb-1"></div>
+            <div class="hero-orb orb-2"></div>
+            <div class="hero-grid"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" aria-hidden="true">
+                <span class="badge-dot"></span>
+                <span>Limited Edition Collection</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Where Craft</span>
+                <span class="title-line title-purple">Meets Light</span>
+            </h1>
+            <p class="hero-subtitle">Two singular products. One uncompromising standard.</p>
+            <div class="hero-indicators">
+                <a href="#aurum" class="indicator indicator-purple" aria-label="Explore Aurum">
+                    <span class="indicator-icon" aria-hidden="true">⟳</span>
+                    <span class="indicator-text">Aurum</span>
+                </a>
+                <a href="#lumen" class="indicator indicator-violet" aria-label="Explore Lumen">
+                    <span class="indicator-icon" aria-hidden="true">⟳</span>
+                    <span class="indicator-text">Lumen</span>
+                </a>
+            </div>
+            <div class="hero-scroll" aria-hidden="true">
+                <span class="scroll-text">Scroll</span>
+                <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product 1: Aurum -->
+    <section id="aurum" class="product product-purple" aria-labelledby="aurum-title">
+        <div class="product-background" aria-hidden="true">
+            <div class="product-orb orb-purple"></div>
+            <div class="product-particles" id="purple-particles"></div>
+        </div>
+        <div class="product-container">
+            <div class="product-media">
+                <div class="media-frame frame-purple">
+                    <div class="product-visual visual-purple" role="img" aria-label="Aurum premium timepiece - 18k gold case with sapphire crystal">
+                        <div class="visual-core"></div>
+                        <div class="visual-ring ring-1"></div>
+                        <div class="visual-ring ring-2"></div>
+                        <div class="visual-ring ring-3"></div>
+                        <div class="visual-glint"></div>
+                    </div>
+                    <div class="media-accent"></div>
+                </div>
+                <div class="media-specs specs-purple">
+                    <h3 class="specs-title">Specifications</h3>
+                    <ul class="specs-list" role="list">
+                        <li><span class="spec-label">Case</span><span class="spec-value">18K Rose Gold, 42mm</span></li>
+                        <li><span class="spec-label">Movement</span><span class="spec-value">In-House Calibre A1</span></li>
+                        <li><span class="spec-label">Crystal</span><span class="spec-value">Domed Sapphire, AR Coating</span></li>
+                        <li><span class="spec-label">Water Resistance</span><span class="spec-value">100m / 10 ATM</span></li>
+                        <li><span class="spec-label">Power Reserve</span><span class="spec-value">72 Hours</span></li>
+                        <li><span class="spec-label">Limited To</span><span class="spec-value">250 Pieces Worldwide</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info-badge">Timepiece Collection</div>
+                <h2 id="aurum-title" class="product-name">Aurum</h2>
+                <p class="product-tagline">The weight of excellence</p>
+                <div class="product-description">
+                    <p>Forged from 18-karat rose gold, Aurum represents the pinnacle of horological artistry. Each piece is assembled by a single master watchmaker over 340 hours, housing the proprietary Calibre A1 movement — a symphony of 287 components beating at 28,800 vibrations per hour.</p>
+                    <p>The domed sapphire crystal reveals a hand-guilloché dial in champagne soleil, where applied gold indices catch light like a sunset frozen in time. The alligator leather strap, hand-stitched in Italy, completes a presence that commands attention without demanding it.</p>
+                </div>
+                <div class="product-highlights">
+                    <div class="highlight">
+                        <span class="highlight-icon" aria-hidden="true">◆</span>
+                        <span>Hand-finished beveling</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon" aria-hidden="true">◆</span>
+                        <span>Silicon hairspring</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon" aria-hidden="true">◆</span>
+                        <span>Quick-release strap system</span>
+                    </div>
+                </div>
+                <a href="#contact" class="product-cta cta-purple">
+                    <span class="cta-text">Reserve Your Aurum</span>
+                    <span class="cta-arrow" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="philosophy" aria-labelledby="philosophy-title">
+        <div class="philosophy-background" aria-hidden="true">
+            <div class="philosophy-line"></div>
+        </div>
+        <div class="philosophy-container">
+            <h2 id="philosophy-title" class="section-title">
+                <span class="title-prefix">Our</span>
+                <span class="title-main">Philosophy</span>
+            </h2>
+            <div class="philosophy-grid">
+                <article class="philosophy-card">
+                    <div class="card-number">01</div>
+                    <h3 class="card-title">Singular Focus</h3>
+                    <p class="card-text">We create only what can be made exceptional. Two products. Zero compromises. Every resource directed toward perfection in its purest form.</p>
+                </article>
+                <article class="philosophy-card">
+                    <div class="card-number">02</div>
+                    <h3 class="card-title">Material Honesty</h3>
+                    <p class="card-text">Gold that ages into character. Glass that disappears. Materials chosen not for marketing, but for how they serve the object's purpose across decades.</p>
+                </article>
+                <article class="philosophy-card">
+                    <div class="card-number">03</div>
+                    <h3 class="card-title">Quiet Luxury</h3>
+                    <p class="card-text">No logos shouted. No trends chased. The owner knows. The observer senses. True luxury whispers in a world that screams.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 2: Lumen -->
+    <section id="lumen" class="product product-violet" aria-labelledby="lumen-title">
+        <div class="product-background" aria-hidden="true">
+            <div class="product-orb orb-violet"></div>
+            <div class="product-particles" id="violet-particles"></div>
+        </div>
+        <div class="product-container">
+            <div class="product-media">
+                <div class="media-frame frame-violet">
+                    <div class="product-visual visual-violet" role="img" aria-label="Lumen architectural lamp - brushed aluminum with optical glass diffuser">
+                        <div class="visual-core core-silver"></div>
+                        <div class="visual-ring ring-silver-1"></div>
+                        <div class="visual-ring ring-silver-2"></div>
+                        <div class="visual-glow"></div>
+                        <div class="visual-prism"></div>
+                    </div>
+                    <div class="media-accent accent-silver"></div>
+                </div>
+                <div class="media-specs specs-violet">
+                    <h3 class="specs-title">Specifications</h3>
+                    <ul class="specs-list" role="list">
+                        <li><span class="spec-label">Body</span><span class="spec-value">Machined Aluminum, Bead-Blasted</span></li>
+                        <li><span class="spec-label">Optics</span><span class="spec-value">Borosilicate Glass Diffuser</span></li>
+                        <li><span class="spec-label">Light Source</span><span class="spec-value">Custom COB LED, 95+ CRI</span></li>
+                        <li><span class="spec-label">Color Temp</span><span class="spec-value">2700K–5000K Tunable</span></li>
+                        <li><span class="spec-label">Dimming</span><span class="spec-value">0.1%–100%, Flicker-Free</span></li>
+                        <li><span class="spec-label">Edition</span><span class="spec-value">500 Numbered Units</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="info-badge">Illumination Collection</div>
+                <h2 id="lumen-title" class="product-name">Lumen</h2>
+                <p class="product-tagline">Light, refined</p>
+                <div class="product-description">
+                    <p>Lumen reimagines the relationship between space and illumination. A solid billet of aircraft-grade aluminum, CNC-machined to 0.02mm tolerance, houses a custom-engineered COB LED module that renders color with 95+ CRI fidelity — indistinguishable from natural daylight.</p>
+                    <p>The borosilicate glass diffuser, mouth-blown in Germany, shapes light into a gradient so seamless it appears to float. Touch-sensitive controls on the tapered stem offer 1000 levels of dimming, while tunable white shifts from warm candlelight to crisp midday. No app. No hub. Just light.</p>
+                </div>
+                <div class="product-highlights">
+                    <div class="highlight">
+                        <span class="highlight-icon" aria-hidden="true">◆</span>
+                        <span>Gesture dimming control</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon" aria-hidden="true">◆</span>
+                        <span>Circadian rhythm preset</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon" aria-hidden="true">◆</span>
+                        <span>Magnetic wireless charging base</span>
+                    </div>
+                </div>
+                <a href="#contact" class="product-cta cta-violet">
+                    <span class="cta-text">Claim Your Lumen</span>
+                    <span class="cta-arrow" aria-hidden="true">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison / Craft Section -->
+    <section class="craft" aria-labelledby="craft-title">
+        <div class="craft-container">
+            <h2 id="craft-title" class="section-title">
+                <span class="title-prefix">The</span>
+                <span class="title-main">Making</span>
+            </h2>
+            <div class="craft-grid">
+                <div class="craft-item">
+                    <div class="craft-visual" aria-hidden="true">
+                        <svg viewBox="0 0 120 120" fill="none" class="craft-icon">
+                            <circle cx="60" cy="60" r="50" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M60 20v80M20 60h80" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="60" cy="60" r="20" stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="craft-name">Precision Engineering</h3>
+                    <p class="craft-desc">Tolerances measured in microns. Components finished by hand. Every surface considered.</p>
+                </div>
+                <div class="craft-item">
+                    <div class="craft-visual" aria-hidden="true">
+                        <svg viewBox="0 0 120 120" fill="none" class="craft-icon">
+                            <path d="M30 60c0-16.6 13.4-30 30-30s30 13.4 30 30-13.4 30-30 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M90 60c0 16.6-13.4 30-30 30" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <circle cx="60" cy="60" r="8" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="craft-name">Material Mastery</h3>
+                    <p class="craft-desc">18K gold alloyed in-house. Aluminum purified to 99.9%. Glass blown by third-generation artisans.</p>
+                </div>
+                <div class="craft-item">
+                    <div class="craft-visual" aria-hidden="true">
+                        <svg viewBox="0 0 120 120" fill="none" class="craft-icon">
+                            <rect x="20" y="20" width="80" height="80" rx="10" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M40 60h40M60 40v40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="craft-name">Timeless Design</h3>
+                    <p class="craft-desc">No planned obsolescence. Serviceable for generations. Design that transcends trend cycles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Experience Section -->
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="contact-background" aria-hidden="true">
+            <div class="contact-orb"></div>
+        </div>
+        <div class="contact-container">
+            <h2 id="contact-title" class="section-title">
+                <span class="title-prefix">Your</span>
+                <span class="title-main">Experience</span>
+            </h2>
+            <p class="contact-lead">By appointment only. Private viewing rooms in Zurich, Tokyo, and New York.</p>
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" required autocomplete="email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="product" class="form-label">Product of Interest</label>
+                        <select id="product" name="product" class="form-select" required>
+                            <option value="">Select a product</option>
+                            <option value="aurum">Aurum — Timepiece Collection</option>
+                            <option value="lumen">Lumen — Illumination Collection</option>
+                            <option value="both">Both Collections</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location" class="form-label">Preferred Location</label>
+                        <select id="location" name="location" class="form-select" required>
+                            <option value="">Select a location</option>
+                            <option value="zurich">Zurich — Bahnhofstrasse Atelier</option>
+                            <option value="tokyo">Tokyo — Ginza Salon</option>
+                            <option value="nyc">New York — Madison Avenue Gallery</option>
+                            <option value="virtual">Virtual Consultation</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message (Optional)</label>
+                    <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell us about your vision..."></textarea>
+                </div>
+                <button type="submit" class="form-submit">
+                    <span class="submit-text">Request Appointment</span>
+                    <span class="submit-arrow" aria-hidden="true">→</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo" aria-label="Aurum & Lumen Home">
+                    <span class="logo-mark" aria-hidden="true"></span>
+                    <span class="logo-text">AURUM & LUMEN</span>
+                </a>
+                <p class="footer-tagline">Crafted for the few who understand.</p>
+            </div>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <div class="footer-column">
+                    <h4 class="footer-heading">Products</h4>
+                    <ul role="list">
+                        <li><a href="#aurum" class="footer-link">Aurum Timepiece</a></li>
+                        <li><a href="#lumen" class="footer-link">Lumen Lamp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul role="list">
+                        <li><a href="#philosophy" class="footer-link">Philosophy</a></li>
+                        <li><a href="#craft" class="footer-link">The Making</a></li>
+                        <li><a href="#contact" class="footer-link">Experience</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Locations</h4>
+                    <ul role="list">
+                        <li><a href="#" class="footer-link">Zurich</a></li>
+                        <li><a href="#" class="footer-link">Tokyo</a></li>
+                        <li><a href="#" class="footer-link">New York</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 Aurum & Lumen. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" class="legal-link">Privacy</a>
+                    <a href="#" class="legal-link">Terms</a>
+                    <a href="#" class="legal-link">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
